@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+.accordion {
+    background-color: rgb(4, 42, 63);
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+    margin-top: 20px;
+}
+
+.active,
+.accordion:hover {
+    background-color: rgb(94, 93, 93);
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: rgb(231, 231, 7);
+    display: none;
+    overflow: hidden;
+    margin: 5px;
+}

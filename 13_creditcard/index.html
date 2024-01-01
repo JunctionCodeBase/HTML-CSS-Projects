@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Fasthand&family=Gideon+Roman&family=IBM+Plex+Sans:wght@100&family=Poppins:wght@300;600&family=Roboto&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .container {
+            width: 40%;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            background-image: url(./bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 30px;
+        }
+
+        .heading {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            margin: 20px 30px;
+        }
+
+        img {
+            width: 80px;
+            margin-top: 30px;
+        }
+
+        .left-logo {
+            position: absolute;
+            z-index: 1;
+            top: 0px;
+            right: 0px;
+        }
+
+        h2 {
+            color: white;
+            margin-top: 30px;
+            padding-left: 10px;
+
+        }
+
+        .text {
+            margin-left: 30px;
+        }
+
+        .text p {
+            color: white;
+            font-size: 30px;
+            margin: 10px 10px;
+        }
+
+        .below-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            margin-left: 40px;
+        }
+
+        .below-text .name {
+            font-size: 20px;
+        }
+
+        .below-text .valid {
+            margin-right: 40px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <div class="logo">
+                <img src="./logo.png" alt="logo">
+            </div>
+            <h2 class="card">Master Card</h2>
+            <div class="left-logo">
+                <img src="./chip.png" alt="logo">
+            </div>
+        </div>
+        <div class="text">
+            <h2 class="cardno">Card Number</h2>
+            <p>8050 5056 8980 7878</p>
+        </div>
+        <div class="below-text">
+            <div class="name">
+                <h3>Naveen Rapelly</h3>
+            </div>
+            <div class="valid">
+                <span>Vaild Thru</span><br>
+                <span>05/23</span>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    background-image: url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    margin-top: 20px;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    gap: 30px;
+}
+
+.action_btn {
+    background-color: rgb(219, 9, 121);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.action_btn:hover {
+    background-color: blueviolet;
+    color: rgb(230, 230, 230);
+    scale: 1.15;
+}
+
+.toogle {
+    display: none;
+    font-size: 23px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(234, 234, 234);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* dropdown navbar tablet */
+
+.drop-down-menu {
+    position: absolute;
+    top: 60px;
+    right: 2rem;
+    width: 300px;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.drop-down-menu.open {
+    height: 240px;
+}
+
+.drop-down-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-down-menu .action_btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive */
+
+@media(max-width:992px) {
+
+    .navbar .link,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .toogle {
+        display: block;
+        color: white;
+        padding-left: 0px 20px;
+    }
+
+    .drop-down-menu {
+        display: block;
+    }
+
+}
+
+@media(max-width:572px) {
+    .drop-down-menu {
+        left: 2rem;
+        width: unset;
+    }
+}
