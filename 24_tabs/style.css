@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tab {
+    background-color: brown;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.tablinks {
+    padding: 10px 50px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.tablinks:hover {
+    background-color: rgb(230, 133, 6);
+}
+
+.tablinks:active {
+    background-color: rgb(255, 220, 44);
+}
+
+.tabcontent {
+    display: none;
+    padding: 10px 10px;
+    border-top: none;
+}

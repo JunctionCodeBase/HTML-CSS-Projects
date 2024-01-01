@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 233, 224);
+}
+
+.card-container {
+    background-color: rgb(26, 53, 66);
+    color: white;
+    padding: 2rem;
+    width: 300px;
+    margin: 3px;
+    border-radius: 3px;
+}
+
+.user-image {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+}
+
+.user-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.user-name {
+    text-align: center;
+
+}
+
+.about-user {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.hire-me {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(230, 233, 233);
+    cursor: pointer;
+    outline: none;
+    color: rgb(2, 56, 76);
+    font-size: 20px;
+}
+
+.social-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.social-items li {
+    list-style: none;
+    padding: 7px;
+    border-radius: 15%;
+}
+
+.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.twitter {
+    background-color: #1D9BF0;
+}
+
+.social-items i {
+    font-size: 30px;
+}
+
+.social-items span {
+    margin-top: .5rem;
+}

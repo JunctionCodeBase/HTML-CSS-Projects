@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+        }
+
+        .newton {
+            width: 500px;
+            height: 20px;
+            border-top: 10px solid pink;
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        div {
+            width: .5rem;
+            height: 20rem;
+            background-color: pink;
+            position: relative;
+        }
+
+        .newton div::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -1.2rem;
+            top: 90%;
+            width: 50px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: pink;
+        }
+
+        .newton div:first-child {
+            animation: left-right 2s linear infinite;
+            transform-origin: top left;
+        }
+
+        .newton div:last-child {
+            animation: right-left 2s linear 1s infinite;
+            transform-origin: top left;
+        }
+
+        @keyframes left-right {
+            0% {
+                rotate: 0deg;
+            }
+
+            25% {
+                rotate: 30deg;
+            }
+
+            50% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: 0deg;
+            }
+        }
+
+        @keyframes right-left {
+            0% {
+                rotate: 0deg;
+            }
+
+            25% {
+                rotate: -30deg;
+            }
+
+            50% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: 0deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="newton">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
